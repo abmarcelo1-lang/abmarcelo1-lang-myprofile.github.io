@@ -1,0 +1,187 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #FFF0F5;
+	color: #9F1447;
+	font-family: "Fredoka", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-variation-settings: "wdth" 100;
+	font-size: 1rem;
+	margin: 0;
+	padding: 20px;
+	line-height: 1.5;
+}
+
+header,
+.profile-box {
+	max-width: 800px;
+	margin: 0 auto 20px auto;
+	padding: 20px;
+	border: 1px solid #ffb6c1;
+	border-radius: 8px;
+	background-color: #ffffff;
+}
+
+main {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+/* Flexbox row placing photo next to name + tagline on desktop */
+.header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	text-align: left;
+	gap: 20px;
+}
+
+.my-photo {
+	width: 240px;
+	height: 200px;
+	flex-shrink: 0;
+	object-fit: cover;
+	border-radius: 8px;
+}
+
+.intro {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 6px;
+	flex: 1;
+}
+
+.intro h1 {
+	font-family: "Lobster", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #d81b60;
+	font-size: 2.2rem;
+	line-height: 1.2;
+	margin: 0;
+}
+
+.intro p {
+	margin: 0;
+	font-size: 1rem;
+}
+
+h2,
+h3 {
+	color: #d81b60;
+	margin-top: 0;
+}
+
+h2 {
+	font-size: 1.4rem;
+}
+
+h3 {
+	font-size: 1.15rem;
+}
+
+.profile-box:last-child {
+	margin-bottom: 0;
+}
+
+.other-projects {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	margin-top: 14px;
+}
+
+.passion-heading {
+	text-align: center;
+}
+
+.project-item {
+	display: flex;
+	flex-direction: column;
+}
+
+.project-item img {
+	display: block;
+	width: 100%;
+	height: auto;
+	max-height: 460px;
+	object-fit: contain;
+	border-radius: 6px;
+	background-color: #ffffff;
+	margin-bottom: 10px;
+}
+
+.proj-title {
+	font-weight: bold;
+	font-size: 1.05rem;
+	color: #9F1447;
+	margin-bottom: 4px;
+}
+
+.description {
+	font-size: 0.92rem;
+	color: #9F1447;
+	margin-bottom: 6px;
+}
+
+.date {
+	font-size: 0.82rem;
+	font-style: italic;
+	color: #666666;
+}
+
+a {
+	color: #d81b60;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+footer {
+	max-width: 800px;
+	margin: 24px auto 8px auto;
+	text-align: center;
+	font-size: 0.78rem;
+	color: #666666;
+}
+
+footer p {
+	margin: 0;
+}
+
+footer a {
+	color: #666666;
+	text-decoration: none;
+}
+
+footer a:hover {
+	color: #d81b60;
+	text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+	body {
+		padding: 12px;
+	}
+
+	.header {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.my-photo {
+		width: 100%;
+		max-width: 280px;
+		height: 200px;
+	}
+
+	.intro h1 {
+		font-size: 1.65rem;
+	}
+}
